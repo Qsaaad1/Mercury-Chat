@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+check if the node_modules directory exist After a fresh clone, there will very likely be no "node_modules"
+Solution : run "npm install" 
+
 ### `npm start`
 
 Runs the app in the development mode.\
