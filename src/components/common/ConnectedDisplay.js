@@ -8,7 +8,7 @@ function ConnectedDisplay() {
     return (
         <div className={`connectedDisplay ${isUserOnDarkMode ? "dark" : "light"}`}>
             <div className="connectedDisplay_wr">
-                <img className={`${isUserOnDarkMode ? "dark" : "light"}`} src="/img/whatapp-intro.jpg" alt="phone-connected" />
+                <img className={`${isUserOnDarkMode ? "dark" : "light"}`} src="https://techloverhd.com/wp-content/uploads/2016/04/How-to-use-WhatsApp-Web-and-keep-your-phone-connected-1200x900.jpg" alt="phone-connected" />
                 <h1 className={`${isUserOnDarkMode && "dark-mode-color1"}`}>
                     Keep your phone connected
                 </h1>
