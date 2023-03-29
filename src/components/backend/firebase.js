@@ -6,13 +6,13 @@ import "firebase/compat/storage";
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDg0MTSwAy-FL5JXCg_n4bKkzubK7MA1iM",
-  authDomain: "saadsapp-4b741.firebaseapp.com",
-  projectId: "saadsapp-4b741",
-  storageBucket: "saadsapp-4b741.appspot.com",
-  messagingSenderId: "414728584143",
-  appId: "1:414728584143:web:2934b08cdfb86e220af0ba",
-  measurementId: "G-QWRY5Y1HPF",
+  apiKey: "AIzaSyAq7gJ8JuOCss6ol8ifw9uOBrfsXGUoO6E",
+  authDomain: "whatsappadvanced-d350b.firebaseapp.com",
+  projectId: "whatsappadvanced-d350b",
+  storageBucket: "whatsappadvanced-d350b.appspot.com",
+  messagingSenderId: "42957807468",
+  appId: "1:42957807468:web:b688132f4d934cc60a1d49",
+  measurementId: "G-T9PR8V62WR"
 };
 
 
