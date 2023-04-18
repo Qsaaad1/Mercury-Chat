@@ -48,7 +48,7 @@ function Login() {
                     <div className="login__container">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Signal-Logo.svg" alt="whatapp-logo" />
                         <div className="login__text">
-                            <h1>Sign in to WhatsApp</h1>
+                            <h1>Sign in to Mercury</h1>
                         </div>
                         <Button onClick={() => sign.in(totalUserOnDb, dispatch, history)}>
                             Sign In With Google
@@ -65,7 +65,7 @@ function Login() {
                         className="login__container">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Signal-Logo.svg" alt="whatapp-logo" />
                         <div className="login__text">
-                            <h1>Sign Up to WhatsApp</h1>
+                            <h1>Sign Up to Mercury</h1>
                         </div>
                         <PhoneInput
                             placeholder="Enter phone number"
