@@ -8,7 +8,7 @@
 }
 
 .sidebarProfile__header {
-    background-color: #00BFA5;
+    background-color: #0079bf;
     display: flex;
     padding: 0 0 1em 1em;
     height: 80px;
@@ -19,6 +19,7 @@
 .sidebarProfile__header>div {
     display: flex;
     align-items: center;
+    border-radius: 12px;    
 }
 
 .sidebarProfile__header>div .MuiSvgIcon-root {
@@ -102,16 +103,19 @@
 /* SECTION 2 */
 
 .sidebarProfile__sec2_wr {
-    background-color: white;
+    background-color: rgb(246, 246, 246);
     margin-top: 2em;
     padding: 1em;
     opacity: 0;
     position: relative;
     bottom: 15px;
+    border-radius: 16px;
+    margin-left: 12px;
+    margin-right: 4px;
 }
 
 .sidebarProfile__sec2_wr>p {
-    color: #00BFA5;
+    color: #1472c0;
     margin-bottom: 1.5em;
     font-size: .9rem;
 }
@@ -127,7 +131,7 @@
 }
 
 .sidebarProfile__sec2 .MuiSvgIcon-root {
-    color: grey;
+    color: rgb(112, 112, 112);
     cursor: pointer;
 }
 
@@ -223,10 +227,13 @@
     opacity: 0;
     position: relative;
     bottom: 15px;
+    border-radius: 16px;
+    margin-left: 12px;
+    margin-right: 4px;
 }
 
 .sidebarProfile__sec4_wr>p {
-    color: #00BFA5;
+    color: #1472c0;
     margin-bottom: 1.5em;
     font-size: .9rem;
 }
