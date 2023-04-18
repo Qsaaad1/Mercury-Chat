@@ -7,6 +7,7 @@
     width: 300px;
     height: 300px;
     object-fit: contain;
+    
 }
 
 .auth-bg1 {
@@ -20,7 +21,7 @@
 }
 
 .login {
-    background-color: #f8f8f8;
+    background-color: #5d5d5d;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -30,8 +31,9 @@
 .login__container {
     padding: 100px;
     text-align: center;
-    background-color: white;
-    border-radius: 10px;
+    margin-top: 40px;
+    background-color: rgb(182, 179, 179);
+    border-radius: 15%;
     box-shadow: 0 1px 3px rgba(63, 4, 4, 0.12) 0 1px;
     z-index: 1;
 }
@@ -40,21 +42,24 @@
     object-fit: contain;
     height: 100px;
     margin-bottom: 40px;
+    border-radius: 30%;
 }
 
 .login__text {
     margin-bottom: 1em;
+    
 }
 
 .login__container>button {
-    margin-top: 30px;
+    margin-top: 15%;
     text-transform: inherit !important;
-    background-color: #0a8d48;
-    color: white;
+    background-color: #4975e8;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
 }
 
 .login__container>button:hover {
-    background-color: #076633;
+    background-color: #0a93dc;
     color: white;
 }
 
@@ -76,7 +81,9 @@
 
 .PhoneInputInput {
     padding: .5em;
-    outline-color: green;
+    outline-color: rgb(5, 131, 180);
+    background-color: aliceblue;
+    border-radius: 12px;
 }
 
 .login__eg {

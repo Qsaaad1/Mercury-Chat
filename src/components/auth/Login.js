@@ -46,7 +46,7 @@ function Login() {
             {userAlreadyHasAcct ?
                 <div className="login">
                     <div className="login__container">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/150px-WhatsApp.svg.png" alt="whatapp-logo" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Signal-Logo.svg" alt="whatapp-logo" />
                         <div className="login__text">
                             <h1>Sign in to WhatsApp</h1>
                         </div>
@@ -63,7 +63,7 @@ function Login() {
                 < div className="login" >
                     <div
                         className="login__container">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/150px-WhatsApp.svg.png" alt="whatapp-logo" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Signal-Logo.svg" alt="whatapp-logo" />
                         <div className="login__text">
                             <h1>Sign Up to WhatsApp</h1>
                         </div>

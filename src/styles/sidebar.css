@@ -1,5 +1,5 @@
 .sidebar {
-    width: 35%;
+    width: 25%;
     position: relative;
 }
 
@@ -10,7 +10,7 @@
     left: -100%;
     padding: .5em 1.5em;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     z-index: 4;
 }
