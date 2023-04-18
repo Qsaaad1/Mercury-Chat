@@ -1,8 +1,9 @@
 .sidebarMain {
     display: flex;
     flex-direction: column;
-    background-color: #ededed;
+    background-color: #5074ff;
     height: 100%;
+    border-radius: 10px;
 }
 
 
@@ -16,7 +17,8 @@
 
 .sidebarMain__headerLeft p {
     margin-left: 1em;
-    font-size: xx-small;
+    font-size: small;
+    
 }
 
 .sidebarMain__header {
@@ -24,7 +26,7 @@
     padding: 1em;
     align-items: center;
     justify-content: space-between;
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid rgb(188, 186, 186);
 }
 
 
@@ -49,7 +51,7 @@
     width: max-content;
     flex-direction: column;
     box-shadow: 1px 1px 9px grey;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .sidebarMain__headerHelp>ul {
@@ -82,8 +84,8 @@
 .sidebarMain__search {
     display: flex;
     align-items: center;
-    background-color: #f6f6f6;
-    height: 39px;
+    background-color: #e0dfea;
+    height: 45px;
     padding: 10px;
 }
 
@@ -92,7 +94,7 @@
 .sidebarMain__searchContainer {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 35px;
     border-radius: 20px;
@@ -111,15 +113,16 @@
 }
 
 .sidebarMain__searchContainer>.MuiSvgIcon-root {
-    color: gray;
+    color: rgb(255, 255, 255);
     margin: 10px;
 }
 
 .sidebarMain__convos {
     flex: 1;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     overflow-y: scroll;
     overflow-x: hidden;
+ 
 }
 
 .sidebarMain__convos>h4 {
@@ -132,6 +135,7 @@
 
 .sidebarMain__convos::-webkit-scrollbar {
     width: .6em;
+    
 }
 
 .sidebarMain__convos::-webkit-scrollbar-track {
@@ -152,11 +156,13 @@
     place-items: center;
     padding: 100px;
     align-items: center;
+    
 }
 
 @media(max-width: 767px) {
     .sidebarMain {
         flex: 1;
+        
     }
 
     .sidebarMain__header {

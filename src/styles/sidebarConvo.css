@@ -124,6 +124,7 @@
 .sidebarConvo__add {
     display: flex;
     font-weight: bold;
+    
     cursor: pointer;
     border-bottom: 1px solid;
     border-color: #f6f6f6;
@@ -135,6 +136,7 @@
     text-align: center;
     padding: .5em;
     flex: 1
+    
 }
 
 .sidebarConvo__addRoom {

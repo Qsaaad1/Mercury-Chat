@@ -1,5 +1,5 @@
 .chat {
-    width: 65%;
+    width: 80%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -152,7 +152,7 @@
 }
 
 .chat__body {
-    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2020/10/25/colourful-light-refraction-wallpaper.jpg");
     flex: 1;
     background-color: white;
     position: relative;
