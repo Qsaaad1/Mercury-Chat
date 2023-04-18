@@ -71,6 +71,9 @@
     color: #05943c;
 }
 
+.MercuryLogo{
+    border-radius: 90%;
+}
 
 @media (max-width: 840px) {
 
