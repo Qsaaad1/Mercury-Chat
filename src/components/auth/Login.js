@@ -63,7 +63,7 @@ function Login() {
                 < div className="login" >
                     <div
                         className="login__container">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Signal-Logo.svg" alt="whatapp-logo" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Signal-Logo.svg" alt="chatApp-logo" />
                         <div className="login__text">
                             <h1>Sign Up to Mercury</h1>
                         </div>

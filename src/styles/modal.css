@@ -8,7 +8,7 @@ ADD CHAT MODAL STYLES
 .modal__addRoom button {
     text-align: center;
     width: 50%;
-    background-color: #06D755;
+    background-color: #0672d7;
     color: white;
     border-radius: 5px;
     border: none;
@@ -20,7 +20,7 @@ ADD CHAT MODAL STYLES
 
 .modal__addChat button:hover,
 .modal__addRoom button:hover {
-    background-color: #06D755;
+    background-color: #06b4d7;
 }
 
 .modal__muteConvo p {
@@ -45,14 +45,14 @@ ADD CHAT MODAL STYLES
 }
 
 .modal__muteConvo div button:nth-of-type(1) {
-    color: #06D755;
+    color: #0698d7;
     background-color: white;
     box-shadow: 1px 1px 8px black;
 }
 
 .modal__muteConvo div button:nth-of-type(2) {
     margin-left: 1em;
-    background-color: #06D755;
+    background-color: #06bbd7;
     border-radius: 5px;
     color: white;
 }
@@ -70,7 +70,7 @@ ADD CHAT MODAL STYLES
     border: none;
     color: white;
     padding: .7em 1.9em;
-    background-color: #0AA545;
+    background-color: #0a6aa5;
     float: right;
     border-radius: 4px;
     cursor: pointer;
@@ -122,7 +122,7 @@ ADD CHAT MODAL STYLES
 .modal__removeFromGroup button:nth-of-type(2),
 .modal__exitGroup button:nth-of-type(2) {
     background-color: white;
-    color: #06D755;
+    color: #0672d7;
     margin-right: .5em;
     border: 1px solid rgba(128, 128, 128, 0.151);
 }

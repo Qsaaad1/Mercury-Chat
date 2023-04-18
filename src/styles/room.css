@@ -1,13 +1,15 @@
 .room {
-    width: 65%;
+    width: 80%;
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-left: 1px;
 }
 
 .room__header {
     position: relative;
     z-index: 1;
+    
 }
 
 .room__headerSearch {
@@ -156,9 +158,9 @@
 }
 
 .room__body {
-    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2020/10/25/colourful-light-refraction-wallpaper.jpg");
     flex: 1;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 1em;
     background-repeat: repeat;
     background-position: center;
