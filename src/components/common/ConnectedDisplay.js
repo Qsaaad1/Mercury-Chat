@@ -9,7 +9,7 @@ function ConnectedDisplay() {
     <div className={`connectedDisplay ${isUserOnDarkMode ? "dark" : "light"}`}>
       <div className="connectedDisplay_wr">
         <img
-          className={`${isUserOnDarkMode ? "dark" : "light"}`}
+          className="MercuryLogo"
           src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Signal-Logo.svg"
           alt="Welcome"
         />
