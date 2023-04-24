@@ -212,7 +212,7 @@
 
 .footer__emojiIcon,
 .room_footerSendIcon {
-    margin: 0 .5em;
+    margin: 0.5em;
 }
 
 .footer__emojiIcon,
@@ -228,6 +228,7 @@
     flex: 1;
     display: flex;
     transition: all 1s ease-in-out;
+    margin-left: 10px;
 }
 
 .room__footer>form>input {
