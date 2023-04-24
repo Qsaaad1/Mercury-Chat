@@ -36,28 +36,7 @@ function UserProfileMain(props) {
                         <p className={isUserOnDarkMode ? "dark-mode-color1" : ""}>~ {currentDisplayConvoInfo?.name}</p>
                     </div>
                 </section>
-                <section className={`userProfileBody__sec2 ${isUserOnDarkMode ? "dark-mode2" : ""}`}>
-                    <div onClick={() => { animate.open(true); setUpSidebarType("MEDIA-DOCS"); }} className="userProfileBody__sec2Info">
-                        <p>Media, Links and Docs</p>
-                        <ArrowForwardIos
-                            className={`${isUserOnDarkMode ? "dark-mode-color3" : ""}`}
-                        />
-                    </div>
-                    {
-                        imgMssgPreview.length > 0 ? <div className="media_grid_wr">
-                            {imgMssgPreview.map((mssg, index) => (
-                                <div
-                                    onClick={() => openImageFullScreen(setImageFullScreen, mssg?.url, mssg?.mssg)}
-                                    key={index}>
-                                    <img src={mssg?.url} alt="media" />
-                                </div>
-                            ))}
-                        </div>
-                            :
-                            <p className={isUserOnDarkMode ? "dark-mode-color1" : ""}>No Media, Links and Docs</p>
-                    }
-                    <div className="userProfileBody__sec2Doc"></div>
-                </section>
+               
                 <section className={`userProfileBody__sec3 ${isUserOnDarkMode ? "dark-mode2" : ""}`}>
                     <div className="muteNotifi" onClick={() => handleModalChange("MUTE__CONVO", false)}>
                         <p>Mute Notification</p>
