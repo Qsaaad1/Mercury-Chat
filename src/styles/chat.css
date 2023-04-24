@@ -15,6 +15,7 @@
     transform: translateY(-200%);
     opacity: 0;
     align-items: center;
+    margin-left: 10px;
 }
 
 .chat__headerSearch>input {
@@ -247,11 +248,13 @@
 .chat__footer>form.hide {
     width: 0;
     display: none;
+    
 }
 
 .footer__emojiIcon,
 .chat_footerSendIcon {
-    margin: 0 .5em;
+    margin: 0.5em;
+    
 }
 
 .footer__emojiIcon,
@@ -260,7 +263,7 @@
 }
 
 .chat_footerSendIcon {
-    color: rgb(62, 174, 218);
+    color: #1472C0;
 }
 
 .footer__emoji>.emoji-picker-react {
