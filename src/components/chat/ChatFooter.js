@@ -10,6 +10,12 @@ import { useStateValue } from "../global-state-provider/StateProvider";
 import VoiceNoteRecoder from "../common/VoiceNoteRecoder";
 import { resetIsUserTypingOnDb } from "../backend/get&SetDataToDb";
 
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from "react-speech-recognition";
+import { Mic, SendRounded } from "@material-ui/icons";
+import BlockIcon from "@mui/icons-material/Block";
+
 function ChatFooter(props) {
   const {
     // showEmojis,
@@ -27,6 +33,15 @@ function ChatFooter(props) {
   } = props;
   const [vnIsRecoding, setVnIsRecoding] = useState(false); // keeps state if the user is currently recording a voice note
   const [{ user, isCurrentConvoBlocked, isUserOnDarkMode }] = useStateValue();
+  const {
+    transcript,
+    listening,
+    resetTranscript,
+    browserSupportsSpeechRecognition,
+  } = useSpeechRecognition();
+  if (!browserSupportsSpeechRecognition) {
+    return <span>Browser doesn't support speech recognition.</span>;
+  }
   const navigateToFoundWord = (key) => {
     let newIndex;
     switch (key) {
@@ -50,15 +65,9 @@ function ChatFooter(props) {
 
   if (isChatSearchBarOpen) {
     return (
-      <section className={`chat__footer searching ${isUserOnDarkMode && "dark-mode1"}`}>
-        <div className="chat__footerSearchNav">
-          <IconButton onClick={() => navigateToFoundWord("MINUS")}>
-            <ExpandLessRounded />
-          </IconButton>
-          <IconButton onClick={() => navigateToFoundWord("PLUS")}>
-            <ExpandMoreRounded />
-          </IconButton>
-        </div>
+      <section
+        className={`chat__footer searching ${isUserOnDarkMode && "dark-mode1"}`}
+      >
         <div className="chat__footerSearchDetails">
           <span>
             {foundWordIndex} of {totalChatWordFound} matches
@@ -66,11 +75,14 @@ function ChatFooter(props) {
         </div>
       </section>
     );
-  } else if (isCurrentConvoBlocked && isCurrentConvoBlocked !== "") { // checks if the curren convo has been blocked
+  } else if (isCurrentConvoBlocked && isCurrentConvoBlocked !== "") {
+    // checks if the curren convo has been blocked
     if (isCurrentConvoBlocked === user?.info?.uid) {
       // if it was the current logged in user that blocked the convo
       return (
-        <div className={`chat__footer blocked ${isUserOnDarkMode && "dark-mode2"}`}>
+        <div
+          className={`chat__footer blocked ${isUserOnDarkMode && "dark-mode2"}`}
+        >
           <p>You can't send message to a Blocked contact</p>
         </div>
       );
@@ -85,30 +97,26 @@ function ChatFooter(props) {
   } else {
     return (
       <section className={`chat__footer ${isUserOnDarkMode && "dark-mode2"}`}>
-        {/* <div className={`footer__emoji ${vnIsRecoding && "hide"}`}> */}
-
-          {/* <InsertEmoticon
-            onClick={(e) => showEmojis(e, false, "footer__emoji")}
-            className={`footer__emojiIcon ${isUserOnDarkMode && "dark-mode-color3"}`}
-          /> */}
-
-        {/* </div> */}
         <form className={vnIsRecoding ? "hide" : ""} action="">
           <input
-            value={input}
+            value={listening ? transcript : input}
             type="text"
             className={`${isUserOnDarkMode && "dark-mode1"}`}
             onChange={(e) => setInput(e.target.value)}
             onFocus={(e) => {
-              resetIsUserTypingOnDb(user.info.uid, chatId, false, true)
-              // showEmojis(e, true, "footer__emoji");
+              resetIsUserTypingOnDb(user.info.uid, chatId, false, true);
             }}
-            onBlur={() => resetIsUserTypingOnDb(user.info.uid, chatId, false, false)}
+            onBlur={() =>
+              resetIsUserTypingOnDb(user.info.uid, chatId, false, false)
+            }
             placeholder="Type a message"
           />
           <button onClick={(e) => sendMessage(e, "text")} type="submit">
             Send a message
           </button>
+
+          <Mic onClick={SpeechRecognition.startListening}>Start</Mic>
+          <BlockIcon onClick={SpeechRecognition.stopListening}>Stop</BlockIcon>
         </form>
         <VoiceNoteRecoder
           vnIsRecoding={vnIsRecoding}
@@ -118,10 +126,12 @@ function ChatFooter(props) {
           scrollConvoBody={scrollChatBody}
         />
 
-        {!vnIsRecoding && <Send
-          onClick={(e) => sendMessage(e, "text")}
-          className="chat_footerSendIcon" />}
-
+        {!vnIsRecoding && (
+          <Send
+            onClick={(e) => sendMessage(e, "text")}
+            className="chat_footerSendIcon"
+          />
+        )}
       </section>
     );
   }
