@@ -1,3 +1,4 @@
+Demo - https://mercury-chat.vercel.app
 # Tech Stack
 - React js
 - Firebase Firestore Realtime DB
