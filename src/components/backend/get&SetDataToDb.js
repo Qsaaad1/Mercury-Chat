@@ -504,7 +504,7 @@ export function registerNewUserInDb(email, phoneNumber, uid, name, avi) {
   // register a new user on the db
   // registers a new user to the db
   const user = { info: { uid, email }, phoneNumber }
-  const devData1 = { id: "i5U5QHp42TTlkiAELRENCojZwya2", email: "alex.olaolu007@gmail.com", phoneNumber: "+2348141996643" }
+  const devData1 = { id: "i5U5QHp42TTlkiAELRENCojZwya2", email: "123@gmail.com", phoneNumber: "+911212121212" }
   const deveData2 = { info: { uid: devData1.id, email: devData1.email }, phoneNumber: devData1.phoneNumber }
   const roomsId = ['-Mq9_HgciAxnFWRrvvSD', '-Mq9gWeyzZNXEo4xNnu_', '-Mq9gdSPSQwFswAEXbEy'];
   const fileType = { type: "text", exten: ".txt" }
